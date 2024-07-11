@@ -11,6 +11,7 @@ interface HomeCardProps {
   handleClick: () => void;
   buttonClassName: string;
   descriptionClassName: string;
+  titleClassName: string;
 }
 
 function Cards({
@@ -21,6 +22,7 @@ function Cards({
   handleClick,
   buttonClassName,
   descriptionClassName,
+  titleClassName,
 }: HomeCardProps) {
   return (
     <div
@@ -34,7 +36,9 @@ function Cards({
       </div>
 
       <div className="flex flex-col gap-2 mt-4">
-        <h1 className="text-[28px] text-center font-bold">{title}</h1>
+        <h1 className={cn("text-[28px] text-center font-bold", titleClassName)}>
+          {title}
+        </h1>
         <p
           className={cn(
             "text-sm text-center font-normal",
