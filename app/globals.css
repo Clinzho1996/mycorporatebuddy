@@ -12,3 +12,11 @@
     background-repeat: no-repeat;
   }
 }
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}

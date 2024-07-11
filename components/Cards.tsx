@@ -36,7 +36,12 @@ function Cards({
       </div>
 
       <div className="flex flex-col gap-2 mt-4">
-        <h1 className={cn("text-[28px] text-center font-bold", titleClassName)}>
+        <h1
+          className={cn(
+            "text-[28px] font-inter text-center font-bold",
+            titleClassName
+          )}
+        >
           {title}
         </h1>
         <p
